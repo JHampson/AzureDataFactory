@@ -24,83 +24,83 @@
 			},
 			{
 				"name": "nltk",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "spacy",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "stanford-nlp3",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "python",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "r",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "numpy",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "scipy",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "matlab8",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "machine-learning",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "pandas",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "pytorch",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "keras",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "nlp",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "apache-spark",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "hadoop",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "pyspark",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "python-3.x",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "tensorflow",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "deep-learning",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "neural-network",
-				"type": "String"
+				"type": "Integer"
 			},
 			{
 				"name": "lstm",
