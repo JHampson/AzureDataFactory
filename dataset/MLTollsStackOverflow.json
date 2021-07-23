@@ -1,0 +1,351 @@
+{
+	"name": "MLTollsStackOverflow",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "data"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "month",
+				"type": "String"
+			},
+			{
+				"name": "nltk",
+				"type": "String"
+			},
+			{
+				"name": "spacy",
+				"type": "String"
+			},
+			{
+				"name": "stanford-nlp3",
+				"type": "String"
+			},
+			{
+				"name": "python",
+				"type": "String"
+			},
+			{
+				"name": "r",
+				"type": "String"
+			},
+			{
+				"name": "numpy",
+				"type": "String"
+			},
+			{
+				"name": "scipy",
+				"type": "String"
+			},
+			{
+				"name": "matlab8",
+				"type": "String"
+			},
+			{
+				"name": "machine-learning",
+				"type": "String"
+			},
+			{
+				"name": "pandas",
+				"type": "String"
+			},
+			{
+				"name": "pytorch",
+				"type": "String"
+			},
+			{
+				"name": "keras",
+				"type": "String"
+			},
+			{
+				"name": "nlp",
+				"type": "String"
+			},
+			{
+				"name": "apache-spark",
+				"type": "String"
+			},
+			{
+				"name": "hadoop",
+				"type": "String"
+			},
+			{
+				"name": "pyspark",
+				"type": "String"
+			},
+			{
+				"name": "python-3.x",
+				"type": "String"
+			},
+			{
+				"name": "tensorflow",
+				"type": "String"
+			},
+			{
+				"name": "deep-learning",
+				"type": "String"
+			},
+			{
+				"name": "neural-network",
+				"type": "String"
+			},
+			{
+				"name": "lstm",
+				"type": "String"
+			},
+			{
+				"name": "time-series",
+				"type": "String"
+			},
+			{
+				"name": "pillow",
+				"type": "String"
+			},
+			{
+				"name": "rasa",
+				"type": "String"
+			},
+			{
+				"name": "opencv",
+				"type": "String"
+			},
+			{
+				"name": "pipenv",
+				"type": "String"
+			},
+			{
+				"name": "seaborn",
+				"type": "String"
+			},
+			{
+				"name": "Dask",
+				"type": "String"
+			},
+			{
+				"name": "jupyter",
+				"type": "String"
+			},
+			{
+				"name": "AllenNLP",
+				"type": "String"
+			},
+			{
+				"name": "Theano",
+				"type": "String"
+			},
+			{
+				"name": "plotly",
+				"type": "String"
+			},
+			{
+				"name": "scikit-learn",
+				"type": "String"
+			},
+			{
+				"name": "BeautifulSoup",
+				"type": "String"
+			},
+			{
+				"name": "scrapy",
+				"type": "String"
+			},
+			{
+				"name": "Gensim",
+				"type": "String"
+			},
+			{
+				"name": "FastText",
+				"type": "String"
+			},
+			{
+				"name": "Pydot",
+				"type": "String"
+			},
+			{
+				"name": "Pybrain",
+				"type": "String"
+			},
+			{
+				"name": "Pytil",
+				"type": "String"
+			},
+			{
+				"name": "Pygame",
+				"type": "String"
+			},
+			{
+				"name": "Colab",
+				"type": "String"
+			},
+			{
+				"name": "Shogun",
+				"type": "String"
+			},
+			{
+				"name": "KNIME",
+				"type": "String"
+			},
+			{
+				"name": "Apache",
+				"type": "String"
+			},
+			{
+				"name": "Gunicorn",
+				"type": "String"
+			},
+			{
+				"name": "Pygtk",
+				"type": "String"
+			},
+			{
+				"name": "Weka",
+				"type": "String"
+			},
+			{
+				"name": "Conda",
+				"type": "String"
+			},
+			{
+				"name": "Ray",
+				"type": "String"
+			},
+			{
+				"name": "matlab51",
+				"type": "String"
+			},
+			{
+				"name": "accord.net",
+				"type": "String"
+			},
+			{
+				"name": "regression",
+				"type": "String"
+			},
+			{
+				"name": "classification",
+				"type": "String"
+			},
+			{
+				"name": "correlation",
+				"type": "String"
+			},
+			{
+				"name": "cluster-analysis",
+				"type": "String"
+			},
+			{
+				"name": "H2o",
+				"type": "String"
+			},
+			{
+				"name": "Mallet",
+				"type": "String"
+			},
+			{
+				"name": "Numba",
+				"type": "String"
+			},
+			{
+				"name": "Tableau",
+				"type": "String"
+			},
+			{
+				"name": "Trifacta",
+				"type": "String"
+			},
+			{
+				"name": "PyArrow",
+				"type": "String"
+			},
+			{
+				"name": "Rasterio",
+				"type": "String"
+			},
+			{
+				"name": "Orange3",
+				"type": "String"
+			},
+			{
+				"name": "PyMC3",
+				"type": "String"
+			},
+			{
+				"name": "Opennn",
+				"type": "String"
+			},
+			{
+				"name": "Oryx",
+				"type": "String"
+			},
+			{
+				"name": "Istio",
+				"type": "String"
+			},
+			{
+				"name": "Venes",
+				"type": "String"
+			},
+			{
+				"name": "Plotnine",
+				"type": "String"
+			},
+			{
+				"name": "Gluon",
+				"type": "String"
+			},
+			{
+				"name": "Plato",
+				"type": "String"
+			},
+			{
+				"name": "Sympy",
+				"type": "String"
+			},
+			{
+				"name": "Flair",
+				"type": "String"
+			},
+			{
+				"name": "stanford-nlp75",
+				"type": "String"
+			},
+			{
+				"name": "pyqt",
+				"type": "String"
+			},
+			{
+				"name": "Nolearn",
+				"type": "String"
+			},
+			{
+				"name": "Lasagne",
+				"type": "String"
+			},
+			{
+				"name": "OCR",
+				"type": "String"
+			},
+			{
+				"name": "Apache-spark-mlib",
+				"type": "String"
+			},
+			{
+				"name": "azure-virtual-machine",
+				"type": "String"
+			}
+		]
+	}
+}
