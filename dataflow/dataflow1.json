@@ -1,0 +1,38 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "MLTollsStackOverflowDL",
+						"type": "DatasetReference"
+					},
+					"name": "raw1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "Json1",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "ConvertMonth"
+				},
+				{
+					"name": "Select1"
+				},
+				{
+					"name": "Aggregate1"
+				}
+			],
+			"script": "source(output(\n\t\tmonth as string,\n\t\tnltk as string,\n\t\tspacy as string,\n\t\t{stanford-nlp3} as string,\n\t\tpython as integer,\n\t\tr as string,\n\t\tnumpy as string,\n\t\tscipy as string,\n\t\tmatlab8 as string,\n\t\t{machine-learning} as string,\n\t\tpandas as string,\n\t\tpytorch as string,\n\t\tkeras as string,\n\t\tnlp as string,\n\t\t{apache-spark} as string,\n\t\thadoop as string,\n\t\tpyspark as string,\n\t\t{python-3.x} as string,\n\t\ttensorflow as string,\n\t\t{deep-learning} as string,\n\t\t{neural-network} as string,\n\t\tlstm as string,\n\t\t{time-series} as string,\n\t\tpillow as string,\n\t\trasa as string,\n\t\topencv as string,\n\t\tpipenv as string,\n\t\tseaborn as string,\n\t\tDask as string,\n\t\tjupyter as string,\n\t\tAllenNLP as string,\n\t\tTheano as string,\n\t\tplotly as string,\n\t\t{scikit-learn} as string,\n\t\tBeautifulSoup as string,\n\t\tscrapy as string,\n\t\tGensim as string,\n\t\tFastText as string,\n\t\tPydot as string,\n\t\tPybrain as string,\n\t\tPytil as string,\n\t\tPygame as string,\n\t\tColab as string,\n\t\tShogun as string,\n\t\tKNIME as string,\n\t\tApache as string,\n\t\tGunicorn as string,\n\t\tPygtk as string,\n\t\tWeka as string,\n\t\tConda as string,\n\t\tRay as string,\n\t\tmatlab51 as string,\n\t\t{accord.net} as string,\n\t\tregression as string,\n\t\tclassification as string,\n\t\tcorrelation as string,\n\t\t{cluster-analysis} as string,\n\t\tH2o as string,\n\t\tMallet as string,\n\t\tNumba as string,\n\t\tTableau as string,\n\t\tTrifacta as string,\n\t\tPyArrow as string,\n\t\tRasterio as string,\n\t\tOrange3 as string,\n\t\tPyMC3 as string,\n\t\tOpennn as string,\n\t\tOryx as string,\n\t\tIstio as string,\n\t\tVenes as string,\n\t\tPlotnine as string,\n\t\tGluon as string,\n\t\tPlato as string,\n\t\tSympy as string,\n\t\tFlair as string,\n\t\t{stanford-nlp75} as string,\n\t\tpyqt as string,\n\t\tNolearn as string,\n\t\tLasagne as string,\n\t\tOCR as string,\n\t\t{Apache-spark-mlib} as string,\n\t\t{azure-virtual-machine} as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> raw1\nraw1 derive(month = right(month,3)) ~> ConvertMonth\nConvertMonth select(mapColumn(\n\t\tmonth,\n\t\tpython,\n\t\tr,\n\t\tmatlab8,\n\t\tjupyter\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> Select1\nSelect1 aggregate(groupBy(month),\n\tpython_avg = avg(python)) ~> Aggregate1\nAggregate1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tumask: 0022,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
+		}
+	}
+}
